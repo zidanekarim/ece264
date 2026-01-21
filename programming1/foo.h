@@ -2,11 +2,12 @@
 
 class Foo : public Foobar {
     public:
-        Foo(string name, int position) {
-            Foobar(name, position);
-            strength *= 3;
-        }
+
         ~Foo() {
             std::cout << "Destructor of Foo";
+        }
+        int setStrength(int position) {
+            strength = position * 3;
+            return 0;
         }
 }

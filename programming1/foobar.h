@@ -9,6 +9,10 @@ class Foobar {
             name = name_in;
             strength = position;
         }
+        int setStrength(int position) {
+            strength = position;
+            return 0;
+        }
         ~Foobar() {
             std::cout << "Destructor of Foobar";
         }
